@@ -1,0 +1,13 @@
+anguage: rust
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
+before_install:
+  - sudo apt-get -qq update
+script:
+  - cargo build --verbose --all
+  - cargo test --verbose --all
