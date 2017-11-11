@@ -1,0 +1,4 @@
+debug = false
+port = 8080
+host = "0.0.0.0"
+expiration_minutes = 30
